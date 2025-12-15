@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تولدت مبارک 🎉</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap');
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #ffdde1, #ee9ca7);
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      overflow: hidden;
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50% 50% 50% 50%;
+      animation: floatUp 12s linear infinite;
+      opacity: 0.8;
+    }
+
+    .balloon:nth-child(1) { left: 10%; background: #ff6f91; animation-delay: 0s; }
+    .balloon:nth-child(2) { left: 30%; background: #ffc75f; animation-delay: 2s; }
+    .balloon:nth-child(3) { left: 60%; background: #845ec2; animation-delay: 4s; }
+    .balloon:nth-child(4) { left: 80%; background: #4d96ff; animation-delay: 6s; }
+
+    @keyframes floatUp {
+      from { transform: translateY(0); }
+      to { transform: translateY(-120vh); }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.95);
+      padding: 35px 45px;
+      border-radius: 25px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 420px;
+      animation: popIn 1.2s ease;
+      z-index: 2;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 2.2rem;
+      color: #ff4d6d;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 2;
+      color: #444;
+    }
+
+    .name {
+      font-weight: 600;
+      color: #ff4d6d;
+      font-size: 1.25rem;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <div class="card">
+    <h1>🎂 تولدت مبارک 🎂</h1>
+    <p>
+      <span class="name">ارتینا</span> عزیز 💖<br />
+      امروز روزیه که دنیا با اومدنت
+      قشنگ‌تر شد ✨<br />
+      امیدوارم سال جدید زندگیت
+      پر از لبخند، موفقیت و آرامش باشه 🌸
+    </p>
+    <div class="footer">
+      همیشه بدرخشی 🌟
+    </div>
+  </div>
+
+</body>
+</html>
